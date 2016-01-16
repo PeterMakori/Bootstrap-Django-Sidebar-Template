@@ -1,0 +1,109 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ronan Pierce Higgins</title>
+
+    <link rel="stylesheet" href="{% static "lib/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{%  static "css/main.css" %}">
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato|Ubuntu' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" class="sidebar-brand2">
+                        MENU
+                    </a>
+                </li>
+
+                <div id='microwrapper'>
+                    <li>
+                        <a href="#" class="items" id='project'>PROJECTS</a>
+                    </li>
+
+                        <ul>
+                            <div class='pushdown'>
+
+                            <a href="#" class="items2">Twitter</a>
+
+                            <div class='pushdown'>
+
+                            <a href="#" class="items2">Django</a>
+
+                            </div>
+
+                            <div class='pushdown'>
+
+                            <a href="#" class="items2">MongoDB</a>
+
+                            </div>
+
+                            <div class='pushdown'>
+
+                            <a href="#" class="items2">Angular</a>
+
+                            </div>
+
+                            </div>
+
+                        </ul>
+
+                </div>
+
+                <li>
+                    <a href="#" class="items">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" class="items">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#" class="items">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span type='button' id='menu-toggle' class="glyphicon glyphicon-align-justify"></span>
+                        <h5 id='caption'> RONAN PIERCE HIGGINS </h5>
+                    </div>
+                </div>
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="{%  static "lib/js/jquery-1.11.3.js" %}"></script>
+    <script type="text/javascript" src="{% static "lib/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{%  static "js/main.js" %}"></script>
+
+
+
+</body>
+
+</html>
